@@ -1,6 +1,6 @@
 UNAME := $(shell uname)
 
-ifeq ($(UNAME), Windows_NT)
+ifeq ($(OS),Windows_NT)
 	GOPATH ?= $(USERPROFILE)/go
 	PATH := $(PATH);$(GOPATH)/bin
 else
