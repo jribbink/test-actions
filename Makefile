@@ -21,5 +21,7 @@ test:
 	echo "$(GOARM)"
 	echo "$(GOHOSTOS)"
 	echo "$(GOHOSTARCH)"
+	echo "$(UNAME)"
+	echo "$(USERPROFILE)"
 	echo "$(PATH)"
 	
