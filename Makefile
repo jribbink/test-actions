@@ -1,3 +1,5 @@
+UNAME := $(shell uname)
+
 ifeq ($(UNAME), Windows_NT)
 	GOPATH ?= $(USERPROFILE)/go
 	PATH := $(PATH);$(GOPATH)/bin
@@ -6,7 +8,9 @@ else
 	PATH := $(PATH):$(GOPATH)/bin
 endif
 
+
 test:
+	echo "$(UNAME)"
 	echo "$(PATH)"
 	echo "$(GOPATH)"
 	echo "$(GOROOT)"
