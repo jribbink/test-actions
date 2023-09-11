@@ -1,3 +1,11 @@
+ifeq ($(UNAME), Windows_NT)
+	GOPATH ?= $(USERPROFILE)/go
+	PATH := $(PATH);$(GOPATH)/bin
+else
+	GOPATH ?= $(HOME)/go
+	PATH := $(PATH):$(GOPATH)/bin
+endif
+
 test:
 	echo "$(PATH)"
 	echo "$(GOPATH)"
@@ -9,4 +17,5 @@ test:
 	echo "$(GOARM)"
 	echo "$(GOHOSTOS)"
 	echo "$(GOHOSTARCH)"
+	echo "$(PATH)"
 	
