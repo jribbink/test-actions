@@ -18,6 +18,4 @@ jobs:
           go-version: "1.19"
       - run: |
           make test
-          make test
-          exit 1
-          make test
+          echo "hello world"
