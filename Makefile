@@ -1,4 +1,5 @@
 SHELL := cmd.exe
+PATH := $(PATH):C:\Foo\Bar
 
 .PHONY: test
 test: foo bar foo bar
