@@ -6,4 +6,5 @@ test: bar
 
 .PHONY: bar
 bar:
-	echo "bar"
+	echo $(PATH)
+	echo %PATH%
