@@ -32,7 +32,7 @@ bar:
 
 .PHONY: use
 use:
-	echo %PATH% && dir $(GOPATH) && 
+	echo %PATH% && dir $(GOPATH) && \
 	$(SET_GOPATH) && \
 	mockery --version && \
 	echo $(GOPATH) && \
