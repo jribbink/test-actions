@@ -16,4 +16,5 @@ bar:
 
 .PHONY: use
 use:
+	go env -w GOPATH="C:\Users\runneradmin\go" && \
 	mockery --version
