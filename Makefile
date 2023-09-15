@@ -18,7 +18,7 @@ else
 endif
 
 .PHONY: test
-test: bar
+test: bar use
 
 .PHONY: bar
 bar:
