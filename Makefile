@@ -12,7 +12,7 @@ bar:
 	go install github.com/axw/gocov/gocov@latest && \
 	go install github.com/matm/gocov-html/cmd/gocov-html@latest && \
 	go install github.com/sanderhahn/gozip/cmd/gozip@latest && \
-	go install github.com/vektra/mockery/v2@latest && \
+	go install github.com/vektra/mockery/v2@latest
 
 .PHONY: use
 use:
