@@ -35,4 +35,4 @@ use:
 	$(SET_GOPATH) && \
 	mockery --version && \
 	echo $(GOPATH) && \
-	echo $(PATH) && \
+	echo $(PATH)
